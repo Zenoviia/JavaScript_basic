@@ -1,10 +1,10 @@
 'use strict';
 
 
-let password = 12345;
+let password = 'HelloWorld';
 let userPassword = prompt('Введіть пароль:');
 
-if (userPassword == password) {
+if (userPassword === password) {
     alert('Ласкаво просимо!');
 } else {
     alert('Пароль не вірний');

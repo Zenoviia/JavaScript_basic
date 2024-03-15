@@ -14,7 +14,7 @@ let person = {
 
     firstName: 'Zenoviia',
     lastName: 'Tkachenko',
-    contacts: contacts,
+    contacts,
    
 };
 

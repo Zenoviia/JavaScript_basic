@@ -62,9 +62,9 @@ let books = {
    }
 
 
-let {countries: [{authors: [{books: [{title: firstBook}, , {title: thirdBook}]}]}, {authors: [{books: [ , {title: secondKidrukBookName}]}, {books:[{year: yearOfPublicationKobzar}]}]}]} = books;
+let {countries: [{authors: [{books: [firstBook, , thirdBook]}]}, {authors: [{books: [ , {title: secondKidrukBookName}]}, {books:[{year: yearOfPublicationKobzar}]}]}]} = books;
 
-   console.log(`Перша книга Конан Дойля: "${firstBook}"`);
-   console.log(`Третя книга Конан Дойля: "${thirdBook}"`);
+   console.log('Перша книга Конан Дойля:', firstBook);
+   console.log('Третя книга Конан Дойля:', thirdBook);
    console.log(`Друга книга Макса Кідрука: "${secondKidrukBookName}"`);
    console.log(`Рік видання кобзаря: ${yearOfPublicationKobzar}`);

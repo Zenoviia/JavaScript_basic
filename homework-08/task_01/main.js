@@ -6,9 +6,9 @@ let array = [2, 7, 6, 3, 9, 1, 4, 5, 8, 10];
 
 // 1
 
-for (let i = 0; i < array.length; i++) {
-    console.log(array.at(i));
-}
+array.forEach((item) => {
+    console.log(item);
+})
 
 
 // 2

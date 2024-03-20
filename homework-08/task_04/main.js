@@ -13,7 +13,10 @@ function mostFrequentNumber(array) {
     let maxFrequency = 0;
 
     for (let num in count) {
-        if (count[num] > maxFrequency || (count[num] === maxFrequency && num > mostFrequentNum)) {
+        let isEqualMaxAndMostFrequent = count[num] === maxFrequency && num > mostFrequentNum;
+        let isBiggerThanMax = count[num] > maxFrequency;
+
+        if (isBiggerThanMax || isEqualMaxAndMostFrequent) {
             mostFrequentNum = num;
             maxFrequency = count[num];
         }

@@ -4,7 +4,7 @@ function Animal(voice) {
 
     this.voice = voice;
 
-    Object.defineProperty(this, 'say', {
+    Object.defineProperty(Animal.prototype, 'say', {
 
         value: function() {
             return this.voice;

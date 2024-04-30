@@ -16,11 +16,12 @@ let getEntries = (obj) => {
     let objKeys = Object.keys(obj);
     let objKeysLength = objKeys.length;
     let objValues = Object.values(obj);
+    let entries = [];
 
     for (let i = 0; i < objKeysLength; i++) {
-        console.log([objKeys[i], objValues[i]]);
+        entries.push([objKeys[i], objValues[i]]);
     }
-    
+    return entries;
 }
 
-getEntries(actor);
+console.log(getEntries(actor));

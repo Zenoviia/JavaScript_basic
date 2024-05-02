@@ -5,7 +5,7 @@ function boom(count) {
     let id = setTimeout(function numbersCount() {
             if (count > 0) {
                 console.log(count);
-            } else {
+            } else if (count === 0){
                 console.log('Boom!')
             }
             count--;
@@ -13,4 +13,4 @@ function boom(count) {
     }, 1000)
 }
 
-// boom(3);
+boom(3);

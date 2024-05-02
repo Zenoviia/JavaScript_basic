@@ -44,26 +44,16 @@ const sales = {
 
    
 function sumProfits(department) {
-    
-    if(Array.isArray(department)) {
-        return department.reduce((acc, employee) => {
-            return acc + employee.profit;
-        }, 0);
 
-    } else {
-        let sum = 0;
+    let sum = department.profit || 0;
 
-        for (const key in department) {
-
-            if (key === 'clients') {
-                sum += sumProfits(department[key]);
-
-            } else if (typeof department[key] === 'object') {
-                sum += sumProfits(department[key]);
-            }
-        }
+    if (Array.isArray(department.clients)) {
+        department.clients.forEach(client => {
+            sum += sumProfits(client);
+        });
         return sum;
     }
+    
 }
 
 console.log(sumProfits(sales));
